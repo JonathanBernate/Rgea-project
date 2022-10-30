@@ -1,0 +1,7 @@
+{
+  "name": "r-gea",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
