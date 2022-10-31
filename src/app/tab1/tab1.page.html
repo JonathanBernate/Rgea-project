@@ -32,9 +32,8 @@
       </ion-col>
 
       <ion-col size="12" size-md="6" size-lg="4">
-        <ion-card color="dark">
-          <img alt="Silhouette of mountains" style="width: 150px; height: 150px;"
-            src="../../assets/images/chat.png" />
+        <ion-card color="dark" (click)="setOpen(true)">
+          <img alt="Silhouette of mountains" style="width: 150px; height: 150px;" src="../../assets/images/chat.png" />
           <ion-card-header>
             <ion-card-title>CHAT-BOT</ion-card-title>
           </ion-card-header>
@@ -53,8 +52,7 @@
 
       <ion-col size="12" size-md="6" size-lg="4">
         <ion-card color="dark">
-          <img alt="Silhouette of mountains" style="width: 150px; height: 150px;"
-            src="../../assets/images/wh.png" />
+          <img alt="Silhouette of mountains" style="width: 150px; height: 150px;" src="../../assets/images/wh.png" />
           <ion-card-header>
             <ion-card-title>SOPORTE</ion-card-title>
           </ion-card-header>
@@ -63,17 +61,34 @@
 
       <ion-col size="12" size-md="6" size-lg="4">
         <ion-card color="dark">
-          <img alt="Silhouette of mountains" style="width: 150px; height: 150px;"
-            src="../../assets/images/info.png" />
+          <img alt="Silhouette of mountains" style="width: 150px; height: 150px;" src="../../assets/images/info.png" />
           <ion-card-header>
             <ion-card-title>INFORMACIÓN</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
-      
+
 
     </ion-row>
   </ion-grid>
 
+ <!-- Modal del chat-bot -->
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar class="new-background-color">
+          <ion-title class="text-color">Chat-bot</ion-title>
+          <ion-buttons slot="end" class="text-color">
+            <ion-icon name="close-circle-outline" size="large" (click)="setOpen(false)"></ion-icon>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <iframe width="100%" height="100%" allow="microphone;"
+          src="https://console.dialogflow.com/api-client/demo/embedded/0a9499da-3268-4bf4-a4eb-be25e8939e15"></iframe>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+<!-- ------------------ -->
 
 </ion-content>

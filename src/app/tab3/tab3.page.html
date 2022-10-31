@@ -7,11 +7,36 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+      <ion-col size="12" size-md="6" size-lg="3"></ion-col>
+
+      <ion-col size="12" size-md="6" size-lg="3">
+        <ion-card color="dark">
+          <img alt="Silhouette of mountains" style="width: 150px; height: 150px;"
+            src="../../assets/images/wh.png" />
+          <ion-card-header>
+            <ion-card-title>UBICACIÓN</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6" size-lg="3">
+        <ion-card color="dark">
+          <img alt="Silhouette of mountains" style="width: 150px; height: 150px;"
+            src="../../assets/images/chat-bot.png" />
+          <ion-card-header>
+            <ion-card-title>CONTENEDORES</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      
+      <ion-col size="12" size-md="6" size-lg="3"></ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>
