@@ -6,13 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  
+
   isModalOpen = false;
+  openModel = false;
 
   setOpen(isOpen: boolean) {
     this.isModalOpen = isOpen;
   }
 
-  constructor() {}
+  setModel(isOpen: boolean) {
+    this.openModel = isOpen;
+  }
+
+  constructor() { }
 
 }
